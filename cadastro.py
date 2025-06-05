@@ -3,10 +3,12 @@ def cadastrar_usuario(cadastro):
     cadastro.append(novo_nome)
     print(f"Usuario {novo_nome} foi adicionado !")
 
-def listar_usuario(cadastro):
-    print("n\Lista de nomes cadastrados: ")
+def listar_usuario(cadastro): 
+    print("--------------------------------")
+    print("\nLista de nomes cadastrados: ")
     for i, nome in enumerate(cadastro, start=1):
         print(f"{i}. {nome}")
+    print("--------------------------------")
 
 def excluir_usuario(cadastro):
     excluir_nome = input("Digite o nome para excluir: ")
